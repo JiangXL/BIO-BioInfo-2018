@@ -1,3 +1,4 @@
+
 # Requirements
 - Input: EcoTestRead2.fq
 - Output: VCF files
@@ -5,8 +6,15 @@
 - Allow one mismatch in the alignment
 - Successfully call most mismatch
 - No open source software
+- Be capable to handle the human genome data, all analysis done in 12 hrs.
 
 # Design
 - Prel + sh + mulitprocess
 - First use existive software to connect, then rewrite the software.
 - Control the CPU and memory
+
+# References
+- https://en.wikipedia.org/wiki/Craig_Venter
+- https://en.wikipedia.org/wiki/Phi_X_174
+- https://zhuanlan.zhihu.com/p/27389007
+- http://ft-sipil.unila.ac.id/dbooks/(ebook%20pdf)%20Teach%20Yourself%20Perl%20in%2021%20Days.pdf
