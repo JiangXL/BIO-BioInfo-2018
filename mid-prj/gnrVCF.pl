@@ -30,9 +30,9 @@ while ( $sam_line =  <sam> ){
 		@sam_line= split("\t",$sam_line);
 		$pipup_line[0] = "Chrom";  # CHROM
 		$pipup_line[4] = 0; 			#the number of reads covering the site
+		$pipup_line[1] = $sam_line[3]; # 1-based coordinate
 		while( $sam_line[3] ne '0'){ # remove unmapped seq
-			
-			$pipup_line[1] = $sam_line[3]; # 1-based coordinate
+
 			$pipup_line[2] = $sam_line[0]; # reference base
 			$pipup_line[4] = $pipup_line[4] +1;
 			$pipup_line[3] = ;# read bases

@@ -66,13 +66,25 @@ SAMtools can optionally append mapping qualities to each line of the output.
 This makes the output much larger, but is necessary when a subset of sites
 are selected.
 
-
-VCF is the standard file format for storing variation data. 
-
 Beta Function
 
-VCF is the standard file format for storing variation data. VCF is a text
-format (most likely stroed in a compressed manner).
+VCF is the standard file format for storing variation data. VCF is a tab
+delimited text format (most likely stroed in a compressed manner). Many 
+millions of variants can be strored in a single VCF file.
+| Column |   Content   | Description
+|--------|-------------|------------
+| #CHROM | Chromsome   | 
+| POS    | Co-ordinate | The start coordinate of the variant
+| ID     | Identifer   | 
+| REF    | Reference allele   | The reference allele is whatever is found in the reference genome. It is not necessarily the major allele
+| ALT    | Alternative allele | The alternative allele is the allele found in the sample you are studying.
+| QUAL   | Score       | Quality score out of 100
+| FILTER | Pass/fail   | If it passed quality filters
+| INFO   | Further infor | llows you to provide further information on the variants. Keys in the INFO field can be defined in header lines above the table.
+| FORMAT | Information about the following columns | The GT in the FORMAT column tells us to expect genotypes in the following columns.
+| NA19909| Individual identifier(optioal) |The previous column told us to expect to see genotypes here. The genotype is in the form 0|1, where 0 indicates the reference allele and 1 indicates the alternative allele, i.e it is heterozygous. The vertical pipe | indicates that the genotype is phased, and is used to indicate which chromosome the alleles are on. If this is a slash / rather than a vertical pipe, it means we don’t know which chromosome they are on.
+
+
 ```
 #CHROM POS ID REF ALT QUAL FILTER INFO FORMAT NA00001 NA00002 NA00003
 20 14370 rs6054257 G A 29 PASS NS=3;DP=14;AF=0.5;DB;H2 GT:GQ:DP:HQ 0|0:48:1:51,51 1|0:48:8:51,51 1/1:43:5:.,.

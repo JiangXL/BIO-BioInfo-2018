@@ -1,14 +1,32 @@
 # Exp.6: SAM File
-  
+
 Yuejian Mo,11510511
 
-## Introduction
-CIGAR (Compact Idiosyncratic Gapped Alignment Report) is 
+## Introduction-- SAM File
+The SAM Format is a text format for storing sequence data in a series of
+tab delimited ASCII columns. Most often it is generated as a human readable
+version of its sister BAM format, which stores the same data in a compressed,
+indexed, binary form. Currently, most SAM format data is output from
+aligners that read FASTQ files and assign the sequences to a position with
+respect to a known reference genome. In the future, SAM will also be used
+to archive unaligned sequence data generated directly from sequencing machines.
+
+CIGAR (Compact Idiosyncratic Gapped Alignment Report) is
 
 > What is a CIGAR?
-You may have heard the term CIGAR, but wondered what it means. Hopefully this section will help clarify it.
+You may have heard the term CIGAR, but wondered what it means. Hopefully this
+section will help clarify it.
 
-The sequence being aligned to a reference may have additional bases that are not in the reference or may be missing bases that are in the reference. The CIGAR string is a sequence of of base lengths and the associated operation. They are used to indicate things like which bases align (either a match/mismatch) with the reference, are deleted from the reference, and are insertions that are not in the reference.
+The sequence being aligned to a reference may have additional bases that are
+not in the reference or may be missing bases that are in the reference. The
+CIGAR string is a sequence of of base lengths and the associated operation.
+They are used to indicate things like which bases align (either a match/mismatch)
+with the reference, are deleted from the reference, and are insertions that
+are not in the reference.
+
+| QNAME | FLAG | RNAME | POS | MAPQ | CIGAR | MRNM/RNEXT | ISIZE/TLEN | SEQ | QUAL | TAGs |
+|-------|-----|--------|-----|------|-------|------------|------------|-----|------|------|
+|      |      | Ref genome |
 
 For example:
 
@@ -24,20 +42,24 @@ With the alignment above, you get:
 
 POS: 5
 CIGAR: 3M1I3M1D5M
-The POS indicates that the read aligns starting at position 5 on the reference. The CIGAR says that the first 3 bases in the read sequence align with the reference. The next base in the read does not exist in the reference. Then 3 bases align with the reference. The next reference base does not exist in the read sequence, then 5 more bases align with the reference. Note that at position 14, the base in the read is different than the reference, but it still counts as an M since it aligns to that position.
+The POS indicates that the read aligns starting at position 5 on the reference.
+The CIGAR says that the first 3 bases in the read sequence align with the
+reference. The next base in the read does not exist in the reference. Then 3
+bases align with the reference. The next reference base does not exist in the
+read sequence, then 5 more bases align with the reference. Note that at
+position 14, the base in the read is different than the reference, but it still
+counts as an M since it aligns to that position.
 
-
-
-## Part I
-1. Here are 11 reads in the data.
+## Partise- I
+1. Here are 17 reads in the data.
 2. Here are 6 unmapped reads.
 3. Here are types of quality score.
-4. Here are 3 different CIGAR string. 
+4. Here are 3 different CIGAR string.
 5. Here are 0 read align to the reverse strand 
-6. Here are 6 MAPQ of 0. These read can be aligned equally well to multiple 
+6. Here are 6 MAPQ of 0. These read can be aligned equally well to multiple
 positions.
 
-## Part II
+## Partise-II
 1. The number of uniquely mapped reads is 11.
 2. The number of high quality alignments is 9.
 3.1. Here are 5 reads fall within start site.
