@@ -16,7 +16,6 @@ open sam, 'Eco2.sam';
 while ( $sam_line =  <sam> ){
 	$len = @sam_line;
 	if ( substr($sam_line, 0, 1 ) ne '@'){
-		@
 		push @sam_line, $sam_line;
  		print substr($sam_line, 0,1);
 		print $len."\n";
