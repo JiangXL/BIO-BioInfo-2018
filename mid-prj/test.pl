@@ -1,3 +1,4 @@
-@test = ('love','you');
-print $test[-1];
-print $test[0];
+@you = ('I');
+@test = ($you,'love','you');
+
+print $test[0,0];
