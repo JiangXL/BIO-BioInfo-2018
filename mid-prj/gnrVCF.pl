@@ -32,11 +32,12 @@ while ( $sam_line =  <sam> ){
 	  	$base_pos = $sam_line[3];         # 1-based coordinate
 			$base_pos_start = $base_pos;      # read start pont from sam
 			#$pileup_line[3] = 0;             # number of reads covering the site
+
 			while( $base_sam = substr($sam_line[9], $base_pos-$base_pos_start, 1)){
-				$base_ref = substr($ref_genome[1], $base_pos, 1); # ref base
+				$base_ref = substr($ref_genome[1], $base_pos-1, 1); # ref base
 				#print $base_ref.$base_sam;
 				#print "\n";
-				if ( $base_sam eq $base_ref){
+				if ( $base_sam eq $base_ref) {
 					$pileup_align[$base_pos] = $pileup_line[$base_pos].'.';
 				}
 				else{
@@ -44,14 +45,18 @@ while ( $sam_line =  <sam> ){
 				}
 				#print $base_pos-$base_pos_start.'---'.$base_pos."\n";
 				$base_pos = $base_pos+1;
-
-
 			}
 		}
 }
 
-foreach $a (@pileup_align){
-	if( $a ne ''){
-		print pileup $a."\n";
-}
+# print the information to pileup file
+foreach my $pos (1..$#pileup_align){
+	my $id = 'CHROM';
+	my $base_ref = substr($ref_genome[1], $pos-1, 1);
+	my $result=@pileup_align[$pos];
+	my $deepth = length($result);
+
+	if( $result ne ''){
+		print pileup join("\t",$id, $pos, $base_ref, $deepth, $result."\n");
+	}
 }
