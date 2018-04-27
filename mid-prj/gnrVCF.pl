@@ -8,13 +8,13 @@
 
 open sam, 'Eco2.sam';
 open vcf, '>Eco2.vcf';
-open pileup, 'Eco2.pileup';
+open pileup, '>Eco2.pileup';
 open genome, 'EscherGenome.fa';
 open test, '>test';
 @vcf_line;
 @sam_line;
 @ref_genome;
-@pileup_line;
+@pileup_align;
 
 # Preprocess thegenome sequence
 $ref_genome[0] = <genome>;
@@ -24,25 +24,34 @@ while ( $ref = <genome> ){
 }
 
 # Generate Pileup file from sam file
-while ( $sam_line =  <sam> ){ 
+while ( $sam_line =  <sam> ){
 		@sam_line= split("\t",$sam_line);
 		if ( (substr($sam_line, 0, 1 ) ne '@') && $sam_line[3] ne '0'){
 			# unexpend the sam info
-			$pileup_line[0] = "Chrom";       # CHROM
-	  	$pileup_line[1] = $sam_line[3];  # 1-based coordinate
-			$pileup_line[3] = 0;             # number of reads covering the site
-			$pileup_line[4] = "";            # mapping result
-			while( $base_sam = substr($sam_line[9], $pileup_line[1]-$sam_line[3], 1)){
-				$pileup_line[2] = substr($ref_genome[1], $pileup_line[1]-1, 1); # ref base
-				if ( $base_sam eq $pileup_line[2]){
-					$pileup_line[3] = $pileup_line[2] +1;
+			#$pileup_line[0] = "Chrom";       # CHROM
+	  	$base_pos = $sam_line[3];         # 1-based coordinate
+			$base_pos_start = $base_pos;      # read start pont from sam
+			#$pileup_line[3] = 0;             # number of reads covering the site
+			while( $base_sam = substr($sam_line[9], $base_pos-$base_pos_start, 1)){
+				$base_ref = substr($ref_genome[1], $base_pos, 1); # ref base
+				#print $base_ref.$base_sam;
+				#print "\n";
+				if ( $base_sam eq $base_ref){
+					$pileup_align[$base_pos] = $pileup_line[$base_pos].'.';
 				}
 				else{
-					$pileup_line[4] = $pileup_line[4].$base_sam;
-				}	
-				$pileup_line[1] = $pileup_line[1]+1;
+					$pileup_align[$base_pos] = $pileup_align[$base_pos].$base_sam;
+				}
+				#print $base_pos-$base_pos_start.'---'.$base_pos."\n";
+				$base_pos = $base_pos+1;
+
+
 			}
-			print join("\t",@pileup_line);
-			print "\n";
 		}
+}
+
+foreach $a (@pileup_align){
+	if( $a ne ''){
+		print pileup $a."\n";
+}
 }
