@@ -2,8 +2,8 @@
 
 #--------------------------------------------------------------------#
 # Identify where the aligned reads differ from the reference gnome   #
-# and write to a VCF file                                            #
-# H.F. 20180415	Version 0.2                                          #
+# and write to a pileup file                                            #
+# H.F. 20180427	Version 0.8                                          #
 #--------------------------------------------------------------------#
 
 open sam, 'Eco2.sam';
@@ -33,12 +33,11 @@ while ( $sam_line =  <sam> ){
 			$base_pos_start = $base_pos;      # read start pont from sam
 			#$pileup_line[3] = 0;             # number of reads covering the site
 
+			# Align each base in same read
 			while( $base_sam = substr($sam_line[9], $base_pos-$base_pos_start, 1)){
 				$base_ref = substr($ref_genome[1], $base_pos-1, 1); # ref base
-				#print $base_ref.$base_sam;
-				#print "\n";
 				if ( $base_sam eq $base_ref) {
-					$pileup_align[$base_pos] = $pileup_line[$base_pos].'.';
+					$pileup_align[$base_pos] = $pileup_align[$base_pos].'.';
 				}
 				else{
 					$pileup_align[$base_pos] = $pileup_align[$base_pos].$base_sam;
