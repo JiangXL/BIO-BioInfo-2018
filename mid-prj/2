@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+#--------------------------------------------------------------------#
+# Align the sequences to reference genome, generate BAM or CRAM files#
+# H.F. 20180428 Version 0.1                                                      #
+#--------------------------------------------------------------------#
+
+open fq '';
+
+sub bwt(){
+	print 'Figure up';
+	
+}
+print "test";
