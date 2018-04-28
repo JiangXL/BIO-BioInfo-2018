@@ -9,8 +9,8 @@
 open sam, 'Eco2.sam';
 open vcf, '>Eco2.vcf';
 open pileup, '>Eco2.pileup';
-open genome, 'EscherGenome.fa';
-open test, '>test';
+open genome, 'phiX174.fa';
+#open test, '>test';
 @vcf_line;
 @sam_line;
 @ref_genome;

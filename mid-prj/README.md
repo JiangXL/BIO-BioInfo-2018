@@ -12,6 +12,7 @@
 - Prel + sh + mulitprocess
 - First use existive software to connect, then rewrite the software.
 - Control the CPU and memory
+- Chengwei Yu: Remove the intros on human genome and keep index.
 
 # Files
 | Files     | DescriptionS
