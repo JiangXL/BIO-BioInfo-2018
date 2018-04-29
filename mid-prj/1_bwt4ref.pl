@@ -3,23 +3,30 @@
 #        Transfer Genome sequence wit BWT                            #
 #        H.F. 20180428 Version 0.1                                   #
 #--------------------------------------------------------------------#
-die "usage: perl bwt4fq.pl <genome_file.fa>\n" unless @ARGV == 2;
+die "usage: perl bwt4fq.pl <genome_file.fa>\n" unless @ARGV == 1;
 
 my $genome_file = $ARGV[0];
-open genome, $genome_ref;         # Source files
-open bwm_sort, ">$fq_file.sort";  # Return files
+open genome, $genome_file;         # Source files
+open bwm_sort, ">$genome_file.sort";  # Return files
 #open debug,dd
 
-
 # Preprocess the genome sequence: delete \n""
-$genome[0] = <genome>;
 my @genome;                       # Store genome chromose sequence 
-chomp $genome[0];
-while($ref = <genome>){	
+while(my $ref = <genome>){	
 	chomp $ref;
 	if ( substr($ref,0,1) eq '>'){
-			$genome[1] = $genome[1].$ref;
+		push(@genome, $ref);
+		$ref = <genome>;
+		print $genome[-1]."\n";
+		chomp $ref;
+		push(@genome, $ref);
 	}
+	else{
+		#$genome[(scalar $genome-1] =$genome[(scalar $genome)-1].$ref;
+		$genome[-1] =$genome[-1].$ref;
+	}
+	
+	print $counter."\n";
 }
 
 $seq_debug = substr($genome[1],0,10).'$';
@@ -40,7 +47,7 @@ sub bwt(){
 	foreach $col (@bwm_sort){
 		$bwm_file = $bwm_file.substr($col,-1,1);
 	}
-	print bwm_sort $bwm_file;
+	#print bwm_sort $bwm_file;
 }
 
 
