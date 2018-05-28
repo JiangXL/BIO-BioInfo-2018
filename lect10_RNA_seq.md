@@ -1,4 +1,4 @@
-# Gene expression profiling
+# Gene expression profiling and RNA-Seq
 In the field of molecular biology, gene expression profiling is the measurement
 of the activity( the expression) of thousands of genes at once, to create a global
 picture of cellular function.
@@ -13,7 +13,17 @@ $ RPKM = \frac{numReads}{Legth/1000 * totalNumReads/1000000}$
 TPM:
 
 
+
+DNA Microarraychallenge in sequence -based gennome wide
+
+RNA Seq
+
+RPM/CPM
+
+RPKM
+
 ## Reference
+
 + wikipeida
 + https://www.tanboyu.com/rna-seq-method-data-tools.html
 + https://www.tanboyu.com/edger-users-guide.html

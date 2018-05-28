@@ -1,4 +1,4 @@
-# Identifying disease associated vaiants
+# 8. Identifying disease associated variants
 
 Coding Genotypes
 
