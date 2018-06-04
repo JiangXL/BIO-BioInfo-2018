@@ -20,7 +20,7 @@ DNA methylation will be divided to
 canonical and non-canonical. Canonical DNA methylation is inheritable. Regulation
 by DNA methylation.
 
-## MNase-seq for nucleosome positioning
+tructural variation (also genomic structural variation) is the variation in structure of an organism's chromosome.
 
 ## Chromatin Immunoprecipitation sequencing(ChIP-seq) 
 ChIP-seq can predict the signaures of protein assocation and histion variants ans
