@@ -2,6 +2,8 @@
 
 ##  Variation, recombination, haplotpes, and inference of 
 
+Mutation, gene drift, 
+
 LD, the gene is no random
 
 为了避免数据的机制大，我们定义了LD
@@ -10,11 +12,14 @@ LD pattern
 
 Recombination,
 
-By shaping the landscape of indivual geneomes genration, recombinaton play an imprtant role.
+By shaping the landscape of indivual geneomes genration, recombinaton play an 
+imprtant role.
 
-THe coalescent that inetgrated recombination wsa ofetn freferred toas the ancestral recombination gph 
+The coalescent that inetgrated recombination was often freferred toas the 
+ancestral recombination gph 
 
-By considering wher e coalescent, recombinaton and muation happed on the tree, we are able to infer the impact of reombinaton on patterns of gnetic pattern.
+By considering wher e coalescent, recombinaton and muation happed on the tree,
+we are able to infer the impact of reombinaton on patterns of gnetic pattern.
 
 ARG, recombination 会形成　网络的图
 
