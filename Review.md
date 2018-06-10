@@ -24,6 +24,8 @@ Haplotype is a group of alleles in an organism that are inherited together
 from a single parent. Linkage disequilibrium is the non-random assocation
 of alleels at different loci in a given population.
 
+Haplotype: The combination of alleles occurring on the same chromosome.
+
 5. Data 
 
 6. Vcf

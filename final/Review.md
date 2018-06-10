@@ -1,19 +1,21 @@
-# The interaction of selection and linkage 
+# The interaction of selection and linkage: Heterotic Model
 
-R.C. LEWONTIN, 1963
-
-> In two-loci model, linkage might have profound effects on the courese of
-natural selection and, _pari passu_, natural selection may have major effectors
-of the distribution of coupling and repulsion linkage in a population.
-
-如何解决多基因问题(多体)
+> 如何解决多基因问题(多体)
 > It may be mulit object problem in force filed of Earth
 > what is the define of loci.
+> How about the mathmatics ability of biology in the past?
+> I chose the toptic, because I am learing the mathmatial statistical.
 
-## Introduction
+In 1960s, we known well how selection of single loci contribute to the genetic 
+change in a population. The study of multiple-gene was just at start point. 
+Most of the mulitple-gene formation are simply extensions of single loci models, 
+which ignore the problem of linkage. Then, there were a few of papers which
+invstigated for more or less special cases of selection. The results of these
+inverstigations werw sufficient to show that even for two loci linkage might have
+profound effects on the natural selection. Natural selection may major effect on
+distribution of coupling and repulsion linkage in a population.
 
-The  two-locus model of Lewontin and Kojima:
-
+Here are the two-locus model from Lewontin and Kojima:
 1. If the fitnesses are additive between loci, linkage does not effect the final
 equilibrium state of the population.
 2. If linkage is tighter than the value demanded by the magnitude of the epistasis
@@ -23,24 +25,42 @@ linkage.
 4. In some cases stable gene frequency equilibria are possible only if linkage
 is tight enough.
 
-Although these conclusion were based only on two-locus model, but point clearly
-to the importance of taking linkage into account in understanding the changes 
-of gene freq in populations. In fact, some experimental results can be understood
+Although conclusions were based on two-locus model, they pointed clearly the 
+importance of linkage for understanding the changes of gene frequencies in
+populations. In fact, some experimental results can be understood
 only if th interaction of selection and linkage is taken into account.
 
+Here were three main modes of selection in natural and artificial populations.
+The first is hetrotic models, in which heterozygots at each locus are more fit
+than homozygotes. The second is the series optimum selection, in which selection
+against individuals whose phenotypes devidate from some intermedidate optimum.
+The last is unidirectional selection in which an extreme phenotype or genotype
+is selected against. The linkage of there three mode are different, so I just
+review the first mode's linkage anaylsis.
+
+
 ## The mathematics of selection and linkage
+
 I don't know how the equations treat the gene frequency change with linkage 
 for two locus or more.
 
 ## Heterotic Selection
-Examine the results of this interaction for some-locus and five-locus models.
+There is increasing evidence that if heterosis at the locus level is importance
+in natural populations, the degree of heterosis at each locus is a fucntion of the
+amount of heterozygosity at other loci. In other words, the epistatic interaction
+determine heterzygote superiority. Then, author assumed that epistasis will cause
+an ineractino of linkage and selection at gene frequency equilibrium.
+
+This paper examine the results of this interaction for some-locus and five-locus 
+models.
 The dynamics of two-locus models has been  discussed by Lewontin and 
-Kojima. The present paper will exine some two-locus heterotic models in which
+Kojima. They present paper will examine some two-locus heterotic models in which
 symmetry of fitness is not assumed, so that numerical solutions are necessary
 or in which the stability of equilibria is not obvious and considerable 
 numerical calculation was necessary to test the stability of the equilibria.
 
 ### Two-locus models:
+
 It is a simple heterotic model with epistatic interation. Each locus shows
 heterosis in every combination with other locus, but the heterosis is not 
 additive between loci. Thus, the degree of heterosis at locus _A_ is greater
@@ -96,6 +116,6 @@ five loci, since the fitnesses of all the genotype would be virtually impossible
 to measure. However, the qualitative aspecrts of these prediction can be tested
 in experimental populations in which five loci aer segregating.
 
-## General Implications of the Results
-Five-locus models add an imporatnt ovbsetatijon not seeni int ehtwo 
+# General Implications of the Results
+Five-locus models add an imporatnt observation not seeni int ehtwo 
 locus model
