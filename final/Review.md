@@ -3,11 +3,12 @@
 R.C. LEWONTIN, 1963
 
 > In two-loci model, linkage might have profound effects on the courese of
-natural slection and, _pari passu_, natural selection may have major effectrs
+natural selection and, _pari passu_, natural selection may have major effectors
 of the distribution of coupling and repulsion linkage in a population.
 
 如何解决多基因问题(多体)
 > It may be mulit object problem in force filed of Earth
+> what is the define of loci.
 
 ## Introduction
 
@@ -22,7 +23,7 @@ linkage.
 4. In some cases stable gene frequency equilibria are possible only if linkage
 is tight enough.
 
-Although these conclusino were based only on two-locus model, but point clearly
+Although these conclusion were based only on two-locus model, but point clearly
 to the importance of taking linkage into account in understanding the changes 
 of gene freq in populations. In fact, some experimental results can be understood
 only if th interaction of selection and linkage is taken into account.
@@ -35,12 +36,12 @@ for two locus or more.
 Examine the results of this interaction for some-locus and five-locus models.
 The dynamics of two-locus models has been  discussed by Lewontin and 
 Kojima. The present paper will exine some two-locus heterotic models in which
-symmetry of fitness is not assumed, so that numerical solution s are necessary
+symmetry of fitness is not assumed, so that numerical solutions are necessary
 or in which the stability of equilibria is not obvious and considerable 
 numerical calculation was necessary to test the stability of the equilibria.
 
 ### Two-locus models:
-It is a simple heterotic model with epistatic intercation. Each locus shows
+It is a simple heterotic model with epistatic interation. Each locus shows
 heterosis in every combination with other locus, but the heterosis is not 
 additive between loci. Thus, the degree of heterosis at locus _A_ is greater
 when in the presence of _Bb_ than in the presence of _BB_ or _bb_. A similar
@@ -70,12 +71,13 @@ chagne for the first locus.
 This is a symmetrical model of the kind considered by L and K, but has certain
 peculiarities which require careful investigation. This model is not presented
 as repersenting a particular natural linkage and natural selection.
+
 ### Five-locus models:
 Simplifying assumptions:
 - (1).THe loci are interchagneable in their effect
-- (2).THere is some heterosis for each locus, irrespecitve of whether the other four
-loci are heterozygous or homozygous. This assure that all gene ferquencies will
-come to a stable equilibrium of gene ferquencies at an intermediate value.
+- (2).THere is some heterosis for each locus, irrespecitve of whether the other
+four loci are heterozygous or homozygous. This assure that all gene ferquencies
+will come to a stable equilibrium of gene ferquencies at an intermediate value.
 - (3).In view of (2), there is no loss of generality by further specifying that
 0/0 and 1/1 homozygotes have equal fitness so that the gene frequencies at each
 locus come to equilibrium at p=q=0.50.
