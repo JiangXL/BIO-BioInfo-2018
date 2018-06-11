@@ -1,10 +1,5 @@
 # The interaction of selection and linkage: Heterotic Model
-
-> 如何解决多基因问题(多体)
-> It may be mulit object problem in force filed of Earth
-> what is the define of loci.
-> How about the mathmatics ability of biology in the past?
-> I chose the toptic, because I am learing the mathmatial statistical.
+> Yuejian Mo, 11510511
 
 In 1960s, we known well how selection of single loci contribute to the genetic 
 change in a population. The study of multiple-gene was just at start point. 

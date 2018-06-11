@@ -1,14 +1,16 @@
 # The interaction of Selection and Linkage---Heterotic Models | 杂种优势模型
 
-> Presentor: Yuejian Mo
-
-> Author   : R.C. Lewontin,1963
-
-> 2018.06.11 @ SUSTech
-
 
 > Nothing in Biology Makes Sense Except in the Light of Evolution.
 --- Theodosius Dobzhansky
+
+
+Presentor: Yuejian Mo
+
+Author   : R.C. Lewontin,1963
+
+2018.06.11 @ SUSTech
+
 
 ----
 
@@ -22,7 +24,6 @@ In 1960s, we known that:
 
 So the paper provide some two-loci model.
 
-> (need picture)
 
 ---
 
@@ -53,32 +54,57 @@ Three main modes of selection in natural and artificial populations:
 
 + Undirectional selection(Neutral Theory)
 
-> (need picture)
+---
+
+# Mathematics of Selection and Linkage | What is the mean?
+$$\Delta x_i = \frac{x_i \left( W_i - \overline{W} \right) - (- 1)^i R D
+W_{12}}{\overline{W}}$$
+
+Where, 
+$$W_{ij}= the\ fitness\ of\ genotype\ whose\ frequency\ is\ Z_{ij}$$
+$$W_i = \sum_{i j} W_{i j} x_j$$
+$$\overline{W} = \sum_i W_i x_i$$
+$R$ is the recombination fraction between the loci.
+$$D=x_0x_3-x_1x_2$$(the linkage disequilibrium determinat)
+
 
 ---
 
 # Mathematics of Selection and Linkage | What is the mean?
-![The genetic transformation T](img/figure2.png)
+$$\Delta x_i = \frac{x_i \left( W_i - \overline{W} \right) - (- 1)^i R D
+W_{12}}{\overline{W}}$$
+
+At gene frequency equilibrium:
+- $D=0$, on linkage disequilibrium
+- $D=/0$, loss or gain of a gametic type by selection and by recombination
+
+More locus can be expend by 2-locus equation.
 
 ---
 
-# Heterotic Selection Model | How to represent? 
+# Mathematics of Selection and Linkage | What is the mean?
+![Broken up the genetic transformation _T_ into its components](img/figure2.png)
+These operations are easy to perform in computer.
+
+---
+
+# Heterotic Selection Model | How to representate? 
 ## Evidence:
 Heterosis is important, then
 $$degree\ of\ heterosis=f(number\ of\ heterozygosity)$$
 
 ## Hypothesis:
-Epistatic(异位显性) 
+Epistatic
 ==>
 interaction of linkage and selection
 
-## Test
+## Model to Test
 - Two-locus model
 - Five-locus model
 
 ---
 
-# Heterotic Selection Model | How to represent? 
+# Heterotic Selection Model | How to representate? 
 ![Relative fitness for two-locus heterotic models](img/table3.png)
 
 
@@ -97,7 +123,7 @@ interaction of linkage and selection
 
 # What about the following and question?
 
--Epistasis is required in order for linkage to be important in natural selection.
+- Epistasis is required in order for linkage to be important in natural selection.
 
--Five-locus models show _cumulative_ effect of the linkage along the chromosome.
+- Five-locus models show _cumulative_ effect of the linkage along the chromosome.
 
