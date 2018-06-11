@@ -5,6 +5,7 @@
 > what is the define of loci.
 > How about the mathmatics ability of biology in the past?
 > I chose the toptic, because I am learing the mathmatial statistical.
+> heterosis 的原因的是: 有更多的genetype 去适应环境
 
 In 1960s, we known well how selection of single loci contribute to the genetic 
 change in a population. The study of multiple-gene was just at start point. 
@@ -51,6 +52,7 @@ to produce the symmetric zygotic matrix $[Z]$.
 ![Broken up genetic transformation into its components](img/figure2.png)
 
 ## Heterotic Selection
+Heterotic can provide more genetype, so it will have higher fitness.
 There is increasing evidence that if heterosis at the locus level is importance
 in natural populations, the degree of heterosis at each locus is a fucntion of the
 amount of heterozygosity at other loci. In other words, the epistatic interaction
